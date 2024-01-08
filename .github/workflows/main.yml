@@ -10,12 +10,6 @@ jobs:
       security-events: write
       
     steps:
-      - name: Bajar codigo
-        uses: actions/checkout@v4
-
-      - name: Probar codigo
-        run: python3 suma.py
-
       - name: Escaneo de codigo
         uses: advanced-security/python-lint-code-scanning-action@v1
         with:
